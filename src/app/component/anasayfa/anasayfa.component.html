@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <div class="baslik">
+    <br />
+    <h1 class="d-flex justify-content-center" style="font-weight: bold;">KiralıkFil</h1>
+    <h4 class="text-danger text-muted d-flex justify-content-center">Hoşgeldiniz {{ email }}</h4>
+  </div>
+  <div class="row mt-5 d-flex justify-content-center">
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+            <button type="button" class="btn btn-warning text-center" (click)="cikisyap()">Çıkış Yap</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h4 class="d-flex justify-content-center">"Kiralık evler, mutluluğa açılan kapılar olabilir."</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Kategori ID</th>
+      <th scope="col">Emlak ID</th>
+      <th scope="col">Oluşturma Tarihi</th>
+      <th scope="col">Güncelleme Tarihi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of realEstateData">
+      <th scope="row">{{ item.id }}</th>
+      <td>{{ item.category_id }}</td>
+      <td>{{ item.real_estate_id }}</td>
+      <td>{{ item.created_at }}</td>
+      <td>{{ item.updated_at }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="baslik">
+    <br />
+    <h1 class="d-flex justify-content-center" style="font-weight: bold;">KiralıkFil</h1>
+  </div>
+  <div class="row mt-5">
+    <div class="col"></div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <h4 class="text-dark text-muted d-flex justify-content-center">Giriş Yap</h4>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">E-posta Adresi</label>
+              <input type="email" class="form-control" name="email" [(ngModel)]="email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Şifre</label>
+              <input type="password" class="form-control" name="password" [(ngModel)]="password">
+            </div>
+            <button type="button" class="btn btn-secondary" (click)="girisyap()">Giriş Yap</button>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="/kayit-ol" style="text-decoration: none;">Hesabınız mı yok? <span class="text-danger">Kayıt ol!</span></a>
+              </div>
+              <div class="col-md-6">
+                <a href="" style="text-decoration: none;" class="d-flex justify-content-end"><span  class="text-dark">Şifremi unuttum</span></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<h4 class="d-flex justify-content-center">"Kiralık evler, mutluluğa açılan kapılar olabilir."</h4>
